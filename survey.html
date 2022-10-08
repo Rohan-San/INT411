@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="survey.css">
+    </head>
+
+    <body>
+
+        <h1 class="survey-heading">Survey Form</h1>
+
+    <div class="form-outer">
+        <p>Let us know how we can improve freeCodeCamp</p>
+        <form>
+        <table class="text-center">
+            <tr >
+            <div>
+                <td align="right" ><span class="red">*</span>Name</td>
+                <td class="form-allign spacing " >
+                <input class="inputbar" type="text" placeholder="Enter your name " required></td>
+            </div>
+            </tr>
+            <tr>
+            <td align="right"><span class="red">*</span>Email</td>
+            <td class="form-allign spacing">
+                <input class="inputbar" type="email" placeholder="Enter your email " required></td>
+            </tr>
+            <tr>
+            <td align="right"><span class="red">*</span>Age</td>
+            <td class="form-allign spacing">
+            <input class="inputbar" type="number" placeholder="Enter your age" required>
+            </td>
+            </tr>
+            <tr>
+            <td align="right">Which option best describes your current role?</td>
+            <td class="form-allign spacing">
+                <select class="select">
+                <option value="student">Student</option>
+                <option value="employee">Employee</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+            <td align="right">
+                <span class="red">*</span>How likely is that you would recommend <br> freeCodeCamp to a friend?
+            </td>
+            <td class="form-allign">
+                <input type="checkbox" value="recommend">Definitely <br>
+                <input type="checkbox" value="recommend">Maybe <br>
+                <input type="checkbox" value="recommend">Not sure <br>
+            </td>
+            </tr>
+            <tr>
+            <td align="right">What do you like most in FCC:</td>
+            <td class="form-allign fcc-spacing">
+                <select class="select">
+                <option value="select an option">Select an option</option>
+                <option value="select an option">Select an option</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+            <td align="right">Things that should in the future <br> (Check all that apply):</td>
+            <td class="form-allign">
+                <input type="checkbox" value="recommend">Front-end Projects<br>
+                <input type="checkbox" value="recommend">Back-end Projects <br>
+                <input type="checkbox" value="recommend">Data Visualization <br>
+            </td>
+            </tr>       
+        </table>
+        <button class="button" type="submit">Submit</button>
+        </form> 
+    </div>
+    </body>
+</html>
