@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Form</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Google_Forms_2020_Logo.svg/558px-Google_Forms_2020_Logo.svg.png">
+</head>
+<body bgcolor="#C8FFF4">
+    <h2>Student Form!</h2>
+    <a href="forms.html">All forms</a>
+    <br><br>
+    Full name:
+    <input type="text" name="firstname" value="Rohan Santhosh" placeholder="firstname" required>
+    <br><br>
+    Email:
+    <input type="email" name="email" placeholder="something@hotmail.com" required>
+    <br><br>
+    Phone:
+    <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    <br><br>
+    Semster:
+    <input type="range" name="points" min="1" max="8" value="3">
+    <br><br>
+    Branch:
+    <input list="branch">
+    <datalist id="branch">
+        <option>CSE</option>
+        <option>CSE (AI&ML)</option>
+        <option>CSE (Cyber Security)</option>
+        <option>ISE</option>
+        <option>ECE</option>
+        <option>EIE</option>
+        <option>ETE</option>
+        <option>Chemical</option>
+    </datalist>
+    <br><br>
+    Website:
+    <input type="url" name="web" placeholder="https://" required>
+    <br><br>
+    <button type="submit">
+        <img src="https://www.pngmart.com/files/3/Submit-Button-PNG-HD.png" width="200" height="50">
+    </button>
+</body>
+</html>

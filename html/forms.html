@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Forms!</title>
+		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Google_Forms_2020_Logo.svg/558px-Google_Forms_2020_Logo.svg.png">
+	</head>
+
+    <body bgcolor="#C8FFF4">
+		<h2>Individual Forms:</h2>
+		<a href="std_form.html">Student form</a>
+		<br>
+		<a href="reg_form.html">Registration form</a>
+		<br>
+		<a href="fdbk_form.html">Feedback form</a>
+		<br>
+		<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+        <form>
+			<fieldset>
+				<legend><strong>Student</strong></legend>
+				Full name:
+				<input type="text" name="firstname" value="Rohan Santhosh" placeholder="firstname" required>
+				<br><br>
+				Email:
+				<input type="email" name="email" placeholder="something@hotmail.com" required>
+				<br><br>
+                Phone:
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <br><br>
+				Semster:
+                <input type="range" name="points" min="1" max="8" value="3">
+                <br><br>
+                Branch:
+				<input list="branch">
+				<datalist id="branch">
+					<option>CSE</option>
+                    <option>CSE (AI&ML)</option>
+                    <option>CSE (Cyber Security)</option>
+					<option>ISE</option>
+					<option>ECE</option>
+					<option>EIE</option>
+					<option>ETE</option>
+					<option>Chemical</option>
+				</datalist>
+                <br><br>
+                Website:
+				<input type="url" name="web" placeholder="https://" required>
+			</fieldset>
+			<br><br>
+			<fieldset>
+				<legend><strong>Registration</strong></legend>
+				Name:
+				<input type="text" name="name" value="Rohan" placeholder="name" required>
+				<br><br>
+				About you:<br>
+				<textarea name="comments" rows="5" cols="25" placeholder="Type here..." required></textarea>
+				<br><br>
+				Email:
+				<input type="email" name="email" placeholder="something@hotmail.com" required>
+				<br><br>
+				Password:
+				<input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z].{8,}" required>
+				<br><br>
+				Gender:
+				<input type="radio" name="gender">Male
+				<input type="radio" name="gender">Female
+				<br><br>
+				Clubs:
+				<input type="checkbox" name="clubs">STARDUST
+				<input type="checkbox" name="clubs">Nakama
+				<input type="checkbox" name="clubs">ECell
+				<input type="checkbox" name="clubs">ITC
+				<input type="checkbox" name="clubs">NSS
+				<br><br>
+				Branch:
+				<select name="branch">
+					<option value="default" selected>--Select--</option>
+					<option value="branch">CSE</option>
+					<option value="branch">ISE</option>
+					<option value="branch">ECE</option>
+					<option value="branch">ETE</option>
+					<option value="branch">Chemical</option>
+				</select>
+				<br><br>
+				<input type="reset">
+			</fieldset>
+			<br><br>
+			<fieldset>
+				<legend><strong>Feedback</strong></legend>
+				Please rate this website:<br>
+				<input type="number" name="feedback" value="5" min="1" max="10">
+				<br>
+				1
+				<input type="range" name="feedback" min="1" max="10" value="5">
+				10
+				<br><br>
+				Please share your thoughts:<br>
+				<textarea name="feedback" rows="5" cols="25" placeholder="Feedback..."></textarea>
+			</fieldset>
+			<br><br>
+			<button type="submit">
+				<img src="https://www.pngmart.com/files/3/Submit-Button-PNG-HD.png" width="200" height="50">
+			</button>
+    </body>
+</html>
